@@ -62,6 +62,7 @@ This will start the back-end process at `http://localhost:3000`. If port 3000 is
 - testing-library/jest-dom  
 - jsdom
 - @testing-library/react 
+- @testing-library/user-event
 
 ## Tip
 
