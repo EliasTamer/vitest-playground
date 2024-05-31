@@ -67,3 +67,35 @@ This will start the back-end process at `http://localhost:3000`. If port 3000 is
 ## Tip
 
 to visualize the unit tests better, run thi command: npm run test:ui
+
+## Useful functions
+
+### Types of Queries
+
+- getBy
+- queryBy
+- findBy
+
+
+### Query Variations
+
+- ByRole
+- ByText 
+- ByPlaceholderText
+- ByTestId
+
+### Useful Matchers 
+
+- toBeChecked()
+- toBeDisabled()
+- toBeEmptyDOMElement()
+- toBeInTheDocument()
+- toHaveAttribute()
+- toHaveTextContent()
+
+
+### SimulatingUserInteractions
+
+- const user = userEvent.setup() 
+- await user.click(element) 
+- await user.type(element, ‘a’)
