@@ -61,6 +61,7 @@ This will start the back-end process at `http://localhost:3000`. If port 3000 is
 - vitest
 - testing-library/jest-dom  
 - jsdom
+- mock service worker
 - @testing-library/react 
 - @testing-library/user-event
 
