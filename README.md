@@ -2,8 +2,7 @@
 
 This is a code playgroud used to handle unit testing in react using vitest.
 
-
-Please follow these instructions carefully to setup this project on your machine. 
+Please follow these instructions carefully to setup this project on your machine.
 
 ## Setting up Auth0 for Authentication
 
@@ -23,8 +22,8 @@ Please follow these instructions carefully to setup this project on your machine
 3. **Configure Application Settings:**
 
    - On the application settings page, configure the following settings:
-     - Allowed Callback URLs: `http://localhost:5173` 
-     - Allowed Logout URLs: `http://localhost:5173` 
+     - Allowed Callback URLs: `http://localhost:5173`
+     - Allowed Logout URLs: `http://localhost:5173`
      - Allowed Web Origins: `http://localhost:5173`
    - Save the changes.
 
@@ -38,7 +37,6 @@ Please follow these instructions carefully to setup this project on your machine
    - In the root directory of the project, you'll find a sample `.env` file. Make a copy and save it as `.env.local`.
    - Replace the Auth0 Domain and Client ID with the actual values you obtained from Auth0.
 
-
 ## Running the App
 
 Now that you have set up Auth0 and configured your environment variables, you can run the React app using the following commands:
@@ -51,19 +49,16 @@ npm install
 npm start
 ```
 
-This will start the back-end process at `http://localhost:3000`. If port 3000 is in use on your machine, update the port number in the following files and run `npm start` again: 
+This will start the back-end process at `http://localhost:3000`. If port 3000 is in use on your machine, update the port number in the following files and run `npm start` again:
 
 - json-server.json
 - src/main.tsx
 
+## unit testing dependencies summary:
 
-## The dependecies used to handle unit testing are listed below:
-- vitest
-- testing-library/jest-dom  
-- jsdom
-- mock service worker
-- @testing-library/react 
-- @testing-library/user-event
+- Mock Service Worker (MSW) is a library that intercepts HTTP requests made by your application, allowing you to mock server responses for testing purposes.
+- Mock Service Worker comes with a companion library (@mswjs/data) for mocking data.
+- Faker (@faker-js/faker) is a library for generating fake (but realistic) data.
 
 ## Tip
 
@@ -77,15 +72,14 @@ to visualize the unit tests better, run thi command: npm run test:ui
 - queryBy
 - findBy
 
-
 ### Query Variations
 
 - ByRole
-- ByText 
+- ByText
 - ByPlaceholderText
 - ByTestId
 
-### Useful Matchers 
+### Useful Matchers
 
 - toBeChecked()
 - toBeDisabled()
@@ -94,9 +88,8 @@ to visualize the unit tests better, run thi command: npm run test:ui
 - toHaveAttribute()
 - toHaveTextContent()
 
-
 ### SimulatingUserInteractions
 
-- const user = userEvent.setup() 
-- await user.click(element) 
+- const user = userEvent.setup()
+- await user.click(element)
 - await user.type(element, ‘a’)
