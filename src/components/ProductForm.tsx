@@ -53,6 +53,7 @@ const ProductForm = ({ product, onSubmit }: Props) => {
             placeholder="Name"
             {...register("name")}
             size="3"
+            autoFocus
           />
         </TextField.Root>
         <ErrorMessage error={errors.name} />
